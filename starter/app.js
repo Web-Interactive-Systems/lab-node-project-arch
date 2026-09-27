@@ -1,5 +1,6 @@
 // TODO: check the docs of dotenv and how to use it with .env file
-import("dotenv").config();
+import "dotenv/config";
+
 import("express-async-errors");
 
 import express from "express";
@@ -17,8 +18,10 @@ const PORT = process.env.PORT;
 
 const start = async () => {
   try {
-    // TODO: start the server
+    app.listen(PORT);
   } catch (error) {
     console.log(error);
   }
 };
+
+start();

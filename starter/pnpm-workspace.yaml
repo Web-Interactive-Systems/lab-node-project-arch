@@ -1,0 +1,9 @@
+allowBuilds:
+  '@scarf/scarf': false
+  better-sqlite3: true
+  core-js: false
+  esbuild: true
+onlyBuiltDependencies:
+  - "@scarf/scarf"
+  - better-sqlite3
+  - esbuild
